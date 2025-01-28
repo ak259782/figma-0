@@ -61,7 +61,6 @@ async function uploadProduct(product) {
       };
 
       const createdProduct = await client.create(document);
-      console.log(`Product "${product.name}" uploaded successfully:`, createdProduct);
     } else {
       console.log(`Product "${product.name}" skipped due to image upload failure.`);
     }
